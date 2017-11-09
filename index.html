@@ -1,0 +1,43 @@
+<html>
+<head>
+
+    <style>
+        h1, p{
+            width: 100%;
+            text-align:center;
+            display: block;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+            background: #ddd;
+        }
+
+        #puzzle{
+            margin: auto;
+            border: 1px solid black;
+            width: 80%;
+
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Puzzle Game</h1>
+<div id="puzzle"></div>
+<p>&copy; Slavo Kozar</p>
+
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+<script src="puzzleGame.js"></script>
+<script>
+
+    var game = new puzzleGame('#puzzle', 'http://www.mcdermotttravel.ie/wp-content/uploads/2017/02/prague_hero.jpg', 3, 4);
+</script>
+
+</body>
+</html>
